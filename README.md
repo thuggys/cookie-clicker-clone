@@ -1,4 +1,3 @@
-Description
 This project is an open-source clone of the popular game Cookie Clicker, designed for students at Zero To Mastery (ZTM) to practice and enhance their web development skills. The game is built using HTML, CSS, and JavaScript, providing a simple yet engaging platform for learning front-end development techniques. Players click on a cookie to earn cookies, which they can then use to purchase upgrades and items that generate cookies automatically, increasing their cookie production rate.
 
 The game features a dynamic UI that updates the number of cookies and the cost of items in real-time, implementing basic game mechanics, event handling, and animations. It's a fun way to dive into the world of web development, offering plenty of opportunities for customization and improvement.
