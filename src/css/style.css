@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../../assets/cartoon-cookie-jww94tgbsyw78s3k.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #f8a488;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cookie {
+    margin-bottom: 20px;
+}
+
+.clicker {
+    margin-bottom: 20px;
+}
+
+.shop {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid #f77f00;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff8f0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.shop button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #f8a488;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.shop button:hover {
+    background-color: #f77f00;
+}
+
+.shop p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.cookie img {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cookie-clicked {
+    animation: clickEffect 0.4s ease-in-out;
+    -webkit-animation: clickEffect 0.4s ease-in-out;
+}
+
+.float-number {
+    position: absolute;
+    color: #0015f7;
+    font-weight: bold;
+    animation: floatNumber 1s ease-out forwards;
+    user-select: none;
+}
+
+@keyframes floatNumber {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
